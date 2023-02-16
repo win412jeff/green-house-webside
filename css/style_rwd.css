@@ -1,0 +1,590 @@
+/* iphone6/7/8(⼩型平板電腦和⼤型⼿手機，767px及以下)*/
+@media only screen and (max-width:413px) {
+    /* ---------頁首區--------- */
+    .block{
+        display: none;
+    }
+    header nav{   
+        height: 55px;
+    }
+    nav a{
+        line-height: 15px;
+    } 
+    header .menu li{
+        font-size: .5rem;
+        font-weight: 600;
+    }
+    header .icon{
+        margin: 0;
+        padding: 0;
+    }
+    header .icon a{
+        margin: 0 3px;
+        border-radius: 4px;
+    }
+    header .icon img{
+        height: 25px;
+        width: 25px;
+    }
+    /* ---------logo區--------- */
+    main .logo a{   
+        width: 80px;
+    }
+    main .name h2{
+        font-size: 1.5rem;
+    }
+    .name{
+        top: 28%;
+        left: 50%;
+    }
+    /* ---------最新消息區--------- */
+    section{
+        height: 60vh;
+        letter-spacing: 0px;
+    }
+    #news{
+        height: 100px;
+    }
+    .newsbox h2{
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .newsbox span{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .listbox li{
+        flex: 1;
+        margin: 10px;
+        /* 多行文本溢出省略 */
+        -webkit-line-clamp: 1; /* 指定行數 */
+        overflow: hidden; /* 區塊溢出:隱藏 */
+        text-overflow: ellipsis; /* 文字溢出:省略號 */
+        display: -webkit-box;/* 彈性佈局容器 */
+        -webkit-box-orient: vertical; /* 區塊佈局方向:垂直 */
+    }
+    .listbox time{
+        font-size: 1px;
+        padding: 0px;
+    }
+    .listbox a{
+        margin-left: 3px;
+        font-size: 1px;
+    }
+    .listbox li:last-child{
+        display: none;
+    }
+    .more{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 30px;
+        height: 15px;
+        background-color: #00B050;
+        border-radius: 5px;
+    }
+    .more a{
+        font-size: .5rem;
+        margin-top: 1px;
+    }
+    /* ---------氣象--------- */
+    section .weather{
+        font-size: .5rem;
+        top: 3%;
+        left: 2%;
+    }
+    #app {
+        width: 90%;
+        height: 90%;
+    }
+    .title_area {   /* 標題 */
+        font-size: .6rem;
+    }
+    hr {
+        width: 100px;
+        border-bottom: solid .2rem rgb(0, 0, 0);
+    }
+    .forcast h2,
+    .forcast h4,
+    .forcast h5 {
+        margin: 0;
+        font-size: 1rem;
+    }
+    /* ---------footer--------- */
+    footer{
+        height: 50px;
+    }   
+    .logo2 img{
+        height: 30px;
+        width: 25px;
+    }
+    .logo2{
+        left: 3%;
+    }
+    footer div{
+        top: 28%;
+        left: 3%;
+        margin-left: 30px;
+        font-size: .5rem;  
+    }
+    footer .menu{
+        top: 25%;
+        right: 5%;
+        font-size: .5rem;
+    }
+    footer .menu li{
+        text-align: right;
+        padding: 0 3px;  
+    }
+    footer p{
+        font-size: .5rem;
+        bottom: 15%;
+        right: 5%;
+    }
+    #gotop{
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+}
+/* iphone6/7/8plus(⼩型平板電腦和⼤型⼿手機，767px及以下)*/
+@media only screen and (min-width:414px) {
+    /* ---------頁首區--------- */
+    .block{
+        display: none;
+    }
+    header nav{   
+        height: 55px;
+    }
+    nav a{
+        line-height: 15px;
+    } 
+    header .menu li{
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    header .icon{
+        margin: 0;
+        padding: 0;
+    }
+    header .icon a{
+        margin: 0 3px;
+        border-radius: 4px;
+    }
+    header .icon img{
+        height: 25px;
+        width: 25px;
+    }
+    /* ---------logo區--------- */
+    main .logo a{   
+        width: 80px;
+    }
+    main .name h2{
+        font-size: 1.5rem;
+    }
+    .name{
+        top: 25%;
+        left: 50%;
+    }
+       /* ---------最新消息區--------- */
+       section{
+        height: 60vh;
+        letter-spacing: 0px;
+    }
+    #news{
+        height: 100px;
+    }
+    .newsbox h2{
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .newsbox span{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .listbox li{
+        flex: 1;
+        margin: 10px;
+        /* 多行文本溢出省略 */
+        -webkit-line-clamp: 1; /* 指定行數 */
+        overflow: hidden; /* 區塊溢出:隱藏 */
+        text-overflow: ellipsis; /* 文字溢出:省略號 */
+        display: -webkit-box;/* 彈性佈局容器 */
+        -webkit-box-orient: vertical; /* 區塊佈局方向:垂直 */
+    }
+    .listbox time{
+        font-size: 1px;
+        padding: 0px;
+    }
+    .listbox a{
+        margin-left: 3px;
+        font-size: 1px;
+    }
+    .listbox li:last-child{
+        display: none;
+    }
+    .more{
+        position: absolute;
+        right: 3px;
+        bottom: 1px;
+        width: 30px;
+        height: 15px;
+        background-color: #00B050;
+        border-radius: 5px;
+    }
+    .more a{
+        font-size: .5rem;
+        margin-top: 1px;
+    }
+    /* ---------氣象--------- */
+    section .weather{
+        font-size: .5rem;
+        top: 3%;
+        left: 2%;
+    }
+    #app {
+        width: 90%;
+        height: 90%;
+    }
+    .title_area {   /* 標題 */
+        font-size: .6rem;
+    }
+    hr {
+        width: 100px;
+        border-bottom: solid .2rem rgb(0, 0, 0);
+    }
+    .forcast h2,
+    .forcast h4,
+    .forcast h5 {
+        margin: 0;
+        font-size: 1rem;
+    }
+        /* ---------footer--------- */
+        footer{
+            height: 50px;
+        }   
+        .logo2 img{
+            height: 30px;
+            width: 25px;
+        }
+        .logo2{
+            left: 3%;
+        }
+        footer div{
+            top: 28%;
+            left: 3%;
+            margin-left: 30px;
+            font-size: .5rem;  
+        }
+        footer .menu{
+            top: 25%;
+            right: 5%;
+            font-size: .5rem;
+        }
+        footer .menu li{
+            text-align: right;
+            padding: 0 3px;  
+        }
+        footer p{
+            font-size: .5rem;
+            bottom: 15%;
+            right: 5%;
+        }
+        #gotop{
+            width: 30px;
+            height: 30px;
+            bottom: 10px;
+            right: 10px;
+        }
+}
+
+/*ipad(中型平板電腦，768px及以上)*/
+@media only screen and (min-width:768px) {
+    /* ---------頁首區--------- */
+    .block{
+        display: none;
+    }
+    header nav{   
+        height: 55px;
+    }
+    nav a{
+        line-height: 25px;
+    } 
+    header .menu li{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    header .icon{
+        margin: 1%;
+        padding: 1%;
+    }
+    header .icon a{
+        margin: 0 10px;
+    }
+    header .icon img{
+        height: 25px;
+        width: 25px;
+    }
+    /* ---------logo區--------- */
+    main .logo a{   
+        width: 100px;
+    }
+    main .name h2{
+        font-size: 1.8rem;
+    }
+    .name{
+        top: 18%;
+        left: 50%;
+    }
+    /* ---------最新消息區--------- */
+    section{
+        height: 70vh;
+        letter-spacing: 1px;
+    }
+    #news{
+        height: 200px;
+    }
+    .newsbox h2{
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .newsbox span{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .listbox li{
+        flex: 1;
+        margin: 18px;
+    }
+    .listbox time{
+        font-size: .5rem;
+        padding: 0px;
+    }
+    .listbox a{
+        margin-left: 3px;
+        font-size: 1px;
+    }
+    .listbox li:last-child{
+        display: block;
+    }
+    .more{
+        position: absolute;
+        right: 30px;
+        bottom: 25px;
+        width: 40px;
+        height: 20px;
+        background-color: #00B050;
+        border-radius: 5px;
+    }
+    .more a{
+        font-size: .8rem;
+        margin-top: 3px;
+    }
+    /* ---------氣象--------- */
+    section .weather{
+        font-size: 1.5rem;
+        top: 3%;
+        left: 2%;
+    }
+    #app {
+        width: 95%;
+        height: 95%;
+    }
+    .title_area {   /* 標題 */
+        font-size: 1.3rem;
+    }
+    hr {
+        width: 250px;
+        border-bottom: solid .3rem rgb(0, 0, 0);
+    }
+    .forcast h2,
+    .forcast h4,
+    .forcast h5 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    /* ---------footer--------- */
+    footer{
+        height: 50px;
+    }   
+    .logo2 img{
+        height: 30px;
+        width: 25px;
+    }
+    .logo2{
+        left: 3%;
+    }
+    footer div{
+        top: 28%;
+        left: 3%;
+        margin-left: 30px;
+        font-size: .5rem;  
+    }
+    footer .menu{
+        top: 25%;
+        right: 5%;
+        font-size: .5rem;
+    }
+    footer .menu li{
+        text-align: right;
+        padding: 0 3px;  
+    }
+    footer p{
+        font-size: .5rem;
+        bottom: 15%;
+        right: 5%;
+    }
+    #gotop{
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/*大型設備(筆記型電腦/桌機，992px及以上)*/
+@media only screen and (min-width:1025px) {
+    /* ---------頁首區--------- */
+    .block{
+        display: block;
+    }
+    header nav{   
+        height: 80px;
+    }
+    nav a{
+        line-height: 50px;
+    } 
+    header .menu li{
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+    header .icon{
+        margin: 1%;
+        padding: 1%;
+    }
+    header .icon a{
+        margin: 0 10px;
+        border-radius: 8px;
+    }
+    header .icon img{
+        height: 40px;
+        width: 40px;
+    }
+    /* ---------logo區--------- */
+    main .logo a{   
+        width: 250px;
+    }
+    main .name h2{
+        font-size: 4rem;
+    }
+    .name{
+        top: 35%;
+        left: 50%;
+    }
+    /* ---------最新消息區--------- */
+    section{
+        height: 100vh;
+        letter-spacing: 1px;
+    }
+    #news{
+        height: 300px;
+    }
+    .newsbox h2{
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+    .newsbox span{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .listbox li{
+        flex: 1;
+        margin: 20px;
+    }
+    .listbox time{
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    .listbox a{
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    .more{
+        position: absolute;
+        right: 40px;
+        bottom: 25px;
+        width: 50px;
+        height: 30px;
+        background-color: #00B050;
+        border-radius: 10px;
+    }
+    .more a{
+        font-size: 1rem;
+        margin-top: 6px;
+    }
+    /* ---------氣象--------- */
+    section .weather{
+        font-size: 2.3rem;
+        top: 3%;
+        left: 2%;
+    }
+    #app {
+        width: 100%;
+        height: 100%;
+    }
+    .title_area {   /* 標題 */
+        font-size: 30px;
+    }
+    hr {
+        width: 350px;
+        border-bottom: solid .4rem rgb(0, 0, 0);
+    }
+    .forcast h2,
+    .forcast h4,
+    .forcast h5 {
+        margin: 0;
+        font-size: 3rem;
+    }
+    /* ---------footer--------- */
+    footer{
+        height: 100px;
+    }   
+    .logo2 img{
+        height: 60px;
+        width: 50px;
+    }
+    .logo2{
+        left: 5%;
+    }
+    footer div{
+        top: 28%;
+        left: 5%;
+        margin-left: 60px;
+        font-size: 1.4rem;
+    }
+    footer .menu{
+        top: 30%;
+        right: 5%;
+        font-size: 1.6rem;
+    }
+    footer .menu li{
+        text-align: right;
+        padding: 0 10px;  
+    }
+    footer p{
+        font-size: 1.3rem;
+        bottom: 5%;
+        right: 5%;
+    }
+    #gotop{
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }  
+}

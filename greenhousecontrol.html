@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>溫室內部情形control</title>
+    <!-- ---------icon必須放最上面---------  -->
+    <link rel="icon" href="./images/logo.ico">
+    <!-- ---------消除預設值---------  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- 自訂的css一定要放在最下面  -->
+    <link rel="stylesheet" href="./css/control.css">
+    <link rel="stylesheet" href="./css/onoff.css">
+    <link rel="stylesheet" href="./css/control_rwd.css">
+</head>
+
+<body>
+
+    <div class="line"></div>
+    <div class="menu-collapsed">
+
+        <div class="bar"></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#news">News</a></li>
+                <li><a href="./index.html#weather">Weather</a></li>
+                <li><a href="./greenhousesensor.html">Green House</a></li>
+                <li><a href="./historydata.html">History Data</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="control">
+            <div class="change">
+                <h2 class="sensorbtn"><a href="./greenhousesensor.html">感測</a></h2>
+                <h2 class="split"> | </h2>
+                <h2 class="controlbtn">控制</h2>
+            </div>
+            <div class="light">
+                <img class="lighton" src="./images/lightbulb (4).png" alt="">
+                <img class="lightoff" src="./images/lightbulb2.png" alt="">
+                
+                <h2>光照</h2>
+                <div class="onoff1">
+                    <div class="can-toggle can-toggle--size-large1">
+                        <input id="a" type="checkbox">
+                        <label for="a">
+                            <div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+
+                        </label>
+                    </div>
+                </div>
+                <div class="onoff4">
+                    <div class="can-toggle">
+                        <input id="d" type="checkbox">
+                        <label for="d">
+                          <div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <div class="fan">
+                <img class="fanon" src="./images/fan (1).png" alt="">
+                <img class="fanoff" src="./images/fan (1).png" alt="">
+                
+                <h2>風扇</h2>
+                <div class="onoff2">
+                    <div class="can-toggle can-toggle--size-large1">
+                        <input id="b" type="checkbox">
+                        <label for="b">
+                            <div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="onoff5">
+                    <div class="can-toggle">
+                        <input id="e" type="checkbox">
+                        <label for="e">
+                          <div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <div class="water">
+                <img class="wateron" src="./images/wateron.png" alt="">
+                <img class="wateroff" src="./images/wateroff.png" alt="">
+                <h2>灑水</h2>
+                <div class="onoff3">
+                    <div class="can-toggle can-toggle--size-large1">
+                        <input id="c" type="checkbox">
+                        <label for="c">
+                            <div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="onoff6">
+                    <div class="can-toggle">
+                        <input id="f" type="checkbox">
+                        <label for="f">
+                          <div class="can-toggle__switch" data-checked="On" data-unchecked="Off"></div>
+                        </label>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="live">
+            <h1>溫室內部情形</h1>
+            <div class="show">  
+                <img class="show01" src="./images/show01.png" alt="">
+                <img class="show02" src="./images/show02.png" alt="">
+                <div class="fans0 fans1">
+                    <img class="fan01" src="./images/fan (1).png" alt="">
+                </div>
+                <div class="fans0 fans2">
+                    <img class="fan01" src="./images/fan (1).png" alt="">
+                </div>
+                <div class="fans0 fans3">
+                    <img class="fan01" src="./images/fan (1).png" alt="">
+                </div>
+                <div class="fans0 fans4">
+                    <img class="fan01" src="./images/fan (1).png" alt="">
+                </div>
+                <div class="icon">
+                    <div class="rain"></div>
+                    <div class="rain2"></div>
+                    <div class="rain3"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/myscript.js"></script>
+
+</body>
+
+</html>

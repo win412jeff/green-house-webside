@@ -1,0 +1,338 @@
+@charset "UTF-8";  /* 一定要加 */
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans&display=swap');
+/* ---------基本設定--------- */
+body{
+    font-family: Arial,'Open Sans', Helvetica,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+/* ---------頁首區--------- */
+header{
+    z-index: 999;
+    display: flex;
+    position: relative;
+}
+header nav{   
+    display: flex;
+    /* height: 80px; */
+    width: 100%;
+    background-color: rgb(39,110,8,0.14);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav a{
+    display: block;
+    text-align: center;
+    /* line-height: 50px; */
+} 
+.block{
+    flex-basis: 10%;
+}
+header .menu{
+    display: flex;
+    flex-basis: 80%;
+    margin: 1% 1% ;
+    border-radius: 10px;
+}
+header .menu li{
+    flex: 1;
+    /* font-size: 1.3rem;
+    font-weight: 900; */
+}
+header .menu a{
+    border-left: solid 2px #2b2b2b;
+    color: #166E31;;
+    text-decoration: none;
+} 
+header .menu li:first-child a{
+    border-left: none;
+} 
+header .menu a:hover{
+    background-color: rgb(9, 122, 70);
+    color: rgb(255, 255, 255);
+}
+header .icon{
+    display: flex;
+    flex-basis: 10%;
+    flex: 1;
+    /* margin: 1% 1%;
+    padding: 1%; */
+    border-radius: 10px;
+}
+header .icon a{
+    /* margin: 0 10px; */
+    /* border-radius: 8px; */
+    overflow: hidden;
+}
+/* header .icon img{
+    height: 40px;
+    width: 40px;
+} */
+/* ---------logo區--------- */
+main .logo{
+    display: flex;
+    justify-content: center;
+} 
+main .logo img{   
+    width: 100%;
+}
+main .logo a{   
+    display: block;
+    /* width: 250px; */
+    margin: 0;
+}
+main .name h2{
+    /* font-size: 4rem; */
+    margin: 0;
+    color: #276e08;
+}
+.name{
+    z-index: 8888;
+    position: absolute;
+   /*  top: 35%;
+    left: 50%; */
+    transform: translateX(-50%);    
+}
+/* ---------最新消息區--------- */
+section{
+    /* overflow: hidden; margin塌陷，可在父層設定 */
+    position: relative;
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    list-style-type: none;
+    align-items: center;
+    /* letter-spacing: 1px; */
+}
+#news{
+    display: flex;
+    background-color: #E2F0D9;
+    /* height: 300px; */
+}
+.newsbox{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #C5E0B4;
+    flex-basis: 30%;
+}
+.newsbox h2{
+    flex: 1.5;
+    text-align: right;
+    /* font-size: 2.5rem; */
+    color: #166e31;
+    /* letter-spacing: 2px; */
+}
+.newsbox span{
+    font-family: 'Josefin Sans',serif;
+    flex: 1;
+    /* font-size: 2.5rem; */
+    font-weight: bolder;
+}
+.listbox{
+    display: flex;
+    background-color: #E2F0D9;
+    flex-basis: 70%;
+    flex-direction: column;
+}
+/* .listbox li{
+    flex: 1;
+    margin: 20px 20px;
+} */
+.listbox time{
+    /* font-size: 1.1rem; */
+    color: rgb(43,101,0);
+    /* padding: 10px; */
+}
+.listbox a{
+    /* margin-left: 10px;
+    font-size: 1rem; */
+    text-decoration: none;
+    color: #464646;
+}
+.listbox a:hover{
+    border-bottom: solid 1.5px #000000;
+}
+/* .more{
+    position: absolute;
+    right: 40px;
+    bottom: 25px;
+    width: 50px;
+    height: 30px;
+    background-color: #00B050;
+    border-radius: 10px;
+} */
+.more a{
+    display: block;
+    text-align: center;
+    /* font-size: 1rem; */
+    text-decoration: none;
+    /* margin-top: 6px; */
+    color: white;
+}
+.more a:hover{
+    border-bottom: solid 1px white;
+}
+/* ---------氣象--------- */
+#weather{
+    background-color: #e2e2e2;
+}
+section .weather{
+    /* font-size: 2.3rem; */
+    font-weight: bolder;
+    position: absolute;
+    /* top: 3%;
+    left: 2%; */
+}
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    /* width: 100%;
+    height: 100%; */
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+    flex: 3;
+}
+
+path {
+    stroke: rgb(0, 0, 0);
+    fill: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+path:hover {  
+    fill: rgb(19, 153, 64);;
+    transform: translate(-5px, -5px);
+}
+
+.title_area {   /* 標題 */
+    flex: 2;
+    margin-right: 3vw;
+    margin-top: -5vh;
+    color: rgb(0, 0, 0);
+    /* font-size: 30px; */
+}
+h1 {
+    font-size: min(10vw, 2.5em);
+}
+
+h1 span {
+    color: rgb(18, 187, 74);
+    padding-left: 10px;
+}
+
+hr {
+    /* width: 350px; */
+    margin-left: 0;
+    border: none;
+    /* border-bottom: solid .4rem rgb(0, 0, 0); */
+}
+
+/* .forcast h2,
+.forcast h4,
+.forcast h5 {
+    margin: 0;
+    font-size: 3rem;
+}
+ */
+.forcast h2 {
+    margin-top: 20px;
+}
+/* ---------footer--------- */
+footer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    /* height: 100px;  */  
+    align-items: center;
+    background-color: #BBFBD0;
+}
+.logo2{
+    position: absolute;
+    /* left: 5%; */
+}
+/* .logo2 img{
+    height: 60px;
+    width: 50px;
+} */
+footer div{
+    position: absolute;
+   /*  top: 28%;
+    left: 5%;
+    margin-left: 60px;
+    font-size: 1.4rem; */
+    text-align: center;
+    font-weight: bolder;
+}
+footer .menu{
+    display: flex;
+    position: absolute;
+    /* top: 30%;
+    right: 5%;
+    font-size: 1.6rem; */
+    list-style-type: none;
+}
+footer .menu li{
+    text-align: right;
+    /* padding: 0 10px;   */
+}
+footer .menu a{
+    text-decoration: none;
+    color: black;
+}
+footer .menu li:last-child{
+    padding: 0;
+}
+footer .menu a:hover{
+    border-bottom: solid 1.5px #000000;
+}
+footer p{
+    position: absolute;
+    /* bottom: 0;
+    right: 5%; */
+}
+
+#gotop{
+    display: none;
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed; /* 固定定位 */
+    /* bottom: 20px;
+    right: 20px; */
+    padding: 5px;
+    cursor: pointer;
+}

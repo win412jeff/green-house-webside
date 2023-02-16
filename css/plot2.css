@@ -1,0 +1,126 @@
+@charset "UTF-8";  /* 一定要加 */
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans&display=swap');
+/* ---------基本設定--------- */
+
+body{
+    display: flex;
+    font-family: "Quicksand",Arial,'Open Sans', Helvetica,'Noto Sans TC','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei',sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+/* ---------圖表--------- */
+  .line-chart2 {
+    background-color: white;
+  }
+  .line-chart2 .line {
+    fill: none;
+  }
+  .line-chart2 .line path {
+    stroke: #8aa0c5;
+    stroke-width: 2;
+  }
+  .line-chart2 rect {
+    fill: #135aca;
+  }
+  .line-chart2 circle {
+    fill: rgb(255, 255, 255);
+    stroke: #135aca;
+    stroke-width: 2px;
+  }
+  /* y軸字體設定 */
+  .line-chart2 .y-axis text {
+    fill: grey;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  /* x軸座標 */
+  .line-chart2 .x-axis .tick {
+    fill: rgb(0, 0, 0);
+    font-size: 12px;
+  }
+  /* 圖表底圖 */
+  .line-chart2 .x-axis line {
+    stroke: #c4c3c3;
+    stroke-width: 6;
+    /* 單位 主要 次要 */
+    stroke-dasharray: 20, 20;
+  }
+  .line-chart2 .x-axis text {
+    font-size: 1rem;
+    opacity: 0;
+    font-weight: 500;
+  }
+  /* 輔助說明 */
+  .line-chart2.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 1rem;
+    background: white;
+    border: solid;
+    border-radius: 3px;
+    border-color: #ca1313;
+    border-width: 3px;
+    pointer-events: none;
+    font-family: helvetica, arial, sans-serif;
+  }
+  .line-chart2.tooltip span {
+    color: #135aca;
+    display: block;
+    font-weight: 500;
+    font-family: helvetica, arial, sans-serif;
+  }
+  .line-chart2.tooltip span.number {
+    font-weight: 300;
+    font-family: helvetica, arial, sans-serif;
+  }
+  /* 輔助說明箭頭 */
+  .line-chart2.tooltip:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -12px;
+    width: 0;
+    height: 0;
+    border-right: 12px solid #ca1313;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    font-family: helvetica, arial, sans-serif;
+  }
+  .line-chart2.tooltip:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -8px;
+    width: 0;
+    height: 0;
+    border-right: 8px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+  

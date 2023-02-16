@@ -1,0 +1,252 @@
+@media only screen and (max-width:414px){
+/* ---------菜單--------- */
+.line{
+    width: 30px;
+    height: 100vh;
+    background-color:  rgb(196, 226, 174);
+}
+.b-a, .bar, .bar:before, .bar:after {
+    left: 0;
+    height: 3px;
+    width: 18px;
+}
+.bar {
+    position: fixed;
+    left: 5px;
+    top: 15px;
+  }
+.bar:before {
+    top: -6px;
+  }
+.bar:after {
+    top: 6px;
+  }
+.menu-expanded {
+    width: 40%;
+    line-height: 30px;
+  }
+.menu-expanded a {
+    font-size: 1em;
+  }
+.menu-expanded li:first-child{
+    margin-top: 40px;
+}
+/* ---------歷史資料--------- */
+h1{
+    line-height: 100px;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.choose div{
+    width: 100px;
+    height: 90px;
+}
+.choose a{
+    font-weight: 400;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    line-height: 88px;
+}
+/* ---------圖表區--------- */
+.plot{
+    width: 325px;
+    height: 300px;
+}
+#chart2{
+    display: block;
+  }
+#chart1, #chart3, #chart4{
+    display: none;
+  }
+}
+/*ipad(中型平板電腦，768px及以上)*/
+@media only screen and (min-width:768px){
+    /* ---------菜單--------- */
+.line{
+    width: 60px;
+    height: 100vh;
+}
+.b-a, .bar, .bar:before, .bar:after {
+    left: 0;
+    height: 6px;
+    width: 30px;
+}
+.bar {
+    left: 12px;
+    top: 24px;
+  }
+.bar:before {
+    top: -8px;
+  }
+.bar:after {
+    top: 8px;
+  }
+.menu-expanded {
+    width: 40%;
+    line-height: 50px;
+  }
+.menu-expanded a {
+    font-size: 2rem;
+  }
+.menu-expanded li:first-child{
+    margin-top: 50px;
+}
+    /* ---------歷史資料--------- */
+    h1{
+        line-height: 200px;
+        font-size: 3.5rem;
+       
+    }
+    .choose{
+        flex-basis: 20%;
+        
+    }
+    .choose div{
+        width: 200px;
+        height: 100px;
+    }
+    .choose a{
+        font-weight: 400;
+        border-radius: 10px;
+        font-size: 2rem;
+        line-height: 98px;
+    }
+    /* ---------圖表區--------- */
+    .plot{
+        width: 660px;
+        height: 450px;
+    }
+    #chart3{
+        display: block;
+      }
+    #chart1, #chart2, #chart4{
+        display: none;
+      }
+}
+/*ipad pro(中型平板電腦，768px及以上)*/
+@media only screen and (min-width:1024px){
+/* ---------菜單--------- */
+.line{
+    width: 60px;
+    height: 100vh;
+}
+.b-a, .bar, .bar:before, .bar:after {
+    left: 0;
+    height: 6px;
+    width: 30px;
+}
+.bar {
+    left: 12px;
+    top: 24px;
+  }
+.bar:before {
+    top: -8px;
+  }
+.bar:after {
+    top: 8px;
+  }
+.menu-expanded {
+    width: 40%;
+    line-height: 80px;
+  }
+.menu-expanded a {
+    font-size: 3rem;
+  }
+.menu-expanded li:first-child{
+    margin-top: 80px;
+}
+/* ---------歷史資料--------- */
+        h1{
+            line-height: 200px;
+            font-size: 4.5rem;
+           
+        }
+        .choose{
+            flex-basis: 15%;
+            
+        }
+        .choose div{
+            width: 300px;
+            height: 150px;
+        }
+        .choose a{
+            font-weight: 400;
+            border-radius: 10px;
+            font-size: 3rem;
+            line-height: 148px;
+        }
+        /* ---------圖表區--------- */
+        .plot{
+            width: 930px;
+            height: 600px;
+        }
+        #chart4{
+            display: block;
+          }
+        #chart1, #chart2, #chart3{
+            display: none;
+          }
+}
+/*大型設備(筆記型電腦/桌機，992px及以上)*/
+@media only screen and (min-width:1025px){
+/* ---------菜單--------- */
+.line{
+    width: 60px;
+    height: 100vh;
+}
+.b-a, .bar, .bar:before, .bar:after {
+    left: 0;
+    height: 6px;
+    width: 30px;
+}
+.bar {
+    left: 12px;
+    top: 24px;
+  }
+.bar:before {
+    top: -8px;
+  }
+.bar:after {
+    top: 8px;
+  }
+.menu-expanded {
+    width: 20%;
+    line-height: 50px;
+  }
+.menu-expanded a {
+    font-size: 2em;
+  }
+.menu-expanded li:first-child{
+    margin-top: 50px;
+}
+/* ---------歷史資料--------- */
+        h1{
+            line-height: 150px;
+            font-size: 4.5rem;  
+        }
+        .choose{
+            flex-basis: 30%;
+        }
+        .choose div{
+            width: 380px;
+            height: 100px;
+        }
+        .choose a{
+            font-weight: 400;
+            border-radius: 10px;
+            font-size: 3rem;
+            line-height: 98px;
+        }
+        /* ---------圖表區--------- */
+        .plot{
+            width: 1506px;
+            height: 406px;
+        }
+        #chart1{
+            display: block;
+          }
+        #chart4, #chart2, #chart3{
+            display: none;
+          }
+}
